@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #fff;
+  --ff-display:'DM Serif Display',serif;
+  --ff-body:'Instrument Sans',sans-serif;
+  --ff-mono:'DM Mono',monospace;
+  --color-border:rgba(0,0,0,0.07);
+  --c-box-hover:rgba(0,0,0,0.13);
+  --c-ink:#1a1a1a;
+  --color-muted:#888;
+  --c-tag-bg:rgba(0,0,0,0.04);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  background-color: #fafaf8;
+}
+
+.border-bottom {
+  border-bottom: 1.5px solid var(--color-border)
+}
+
+.font-mono {
+  font-family: var(--ff-mono);
+}
+
+.font-display {
+  font-family: var(--ff-display);
+}
+
+.font-body {
+  font-family: var(--ff-body);
+}
+
+.text-muted {
+  color: var(--color-muted)
+}
+
+.bg-muted {
+  background-color: var(--color-muted);
+}
+
+.border-muted {
+  border: 1px solid var(--color-border)
+}
+
+.border-r-muted {
+  border-right: 1.5px solid var(--color-border)
+}
+
+.border-l-muted {
+  border-left: 1.5px solid var(--color-border)
+}
+
+.bg-muted {
+  background-color: var(--color-border);
+}
