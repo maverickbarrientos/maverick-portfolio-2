@@ -19,7 +19,7 @@ export function Hero() {
                 
                 <div className="flex flex-col items-start gap-6 col-span-2 p-10 border-bottom lg:border-bottom-none lg:border-r-muted">
                     <p className="font-mono text-muted font-light">FULL STACK DEVELOPER</p>
-                    <p className="font-display font-bold leading-tight text-5xl">
+                    <p className="font-display font-bold leading-tight text-3xl lg:text-5xl">
                         I build web applications <br />
                         and embed hardware into functional systems.
                     </p> 
