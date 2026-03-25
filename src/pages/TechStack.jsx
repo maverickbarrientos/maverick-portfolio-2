@@ -29,7 +29,7 @@ export function TechStack() {
         <section id="skills">
 
             <div className="border border-muted">
-                <p className="py-5 px-10 text-xs lg:text-md font-mono">SKILLS & STACK</p>
+                <p className="py-5 px-10 text-md font-mono">SKILLS & STACK</p>
             </div>
 
             <div className="flex-1 grid grid-cols-1 lg:grid-cols-4 min-w-0">

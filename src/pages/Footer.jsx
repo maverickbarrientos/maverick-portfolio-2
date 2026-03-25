@@ -21,7 +21,7 @@ export function Footer() {
             <div className="grid grid-cols-2 px-10 py-5 border-bottom gap-2">
                 <div>
                     <p className="font-display text-xl lg:text-3xl">Let's build something</p>
-                    <p className="text-muted text-xs lg:text-sm">Whether it's a product idea, a job opportunity, or just a chat — my inbox is open.</p>
+                    <p className="text-muted text-sm">Whether it's a product idea, a job opportunity, or just a chat — my inbox is open.</p>
                 </div>
 
                 <div className="font-mono text-[10px] lg:text-sm flex flex-col gap-3 text-muted">

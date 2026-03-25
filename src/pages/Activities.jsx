@@ -51,7 +51,7 @@ export function Activities() {
         <section id="activities">
 
             <div className="border border-muted">
-                <p className="py-5 px-10 text-xs lg:text-md font-mono">ACTIVITIES</p>
+                <p className="py-5 px-10 text-md font-mono">ACTIVITIES</p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2">
