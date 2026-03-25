@@ -1,7 +1,6 @@
 export function ProjectCard({ title, children, link, number, accent = "#3a9f6a" }) {
-
     return (
-        <div className="group h-full flex flex-col flex-wrap p-5 px-10 gap-3 border-muted relative overflow-hidden transition-colors duration-150 hover:bg-black/2">
+        <div className="group min-w-0 h-full flex flex-col p-5 px-10 gap-3 border-muted relative overflow-hidden transition-colors duration-150 hover:bg-black/2">
             
             <div 
                 className="absolute top-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200"

@@ -47,7 +47,7 @@ export function Projects () {
                         return (
                             <ProjectCard title={project.title} number={`0${index + 1}`} link={project.link} accent={project.accent}>
                                 <p className="text-sm">{ project.description }</p>
-                                <div className="flex gap-2">
+                                <div className="flex flex-wrap gap-2">
                                     { project.technologies.map((technology) => {
                                         return (
                                             <Badge text={technology} />

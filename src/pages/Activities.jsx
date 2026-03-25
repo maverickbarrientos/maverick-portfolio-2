@@ -60,8 +60,8 @@ export function Activities() {
                     activities.map((activity) => {
                         return (
                             <div className="grid grid-cols-4 border-muted">
-                                <div className="col-span-1 border-r-muted px-10 py-5">
-                                    <p className="font-mono text-muted text-xs">{ activity.date }</p>
+                                <div className="col-span-1 border-r-muted px-5 py-5 flex flex-col gap-2 min-w-0">
+                                    <p className="font-mono text-muted text-xs whitespace-nowrap">{ activity.date }</p>
                                     <Badge text={activity.type} />
                                 </div>
                                 <div className="col-span-3 text-xs flex flex-col gap-2 py-5 px-10">
