@@ -20,11 +20,11 @@
   }
 }
 
-@utility .border-bottom-none {
+@utility border-bottom-none {
   border-bottom: none;
 }
 
-@utility .border-r-muted {
+@utility border-r-muted {
   border-right: 1.5px solid var(--color-border);
 }
 
