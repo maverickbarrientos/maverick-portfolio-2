@@ -1,5 +1,11 @@
 import { Card } from "../components/Card"
 import { Badge } from "../components/Badge"
+import { motion } from "framer-motion"
+
+const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+}
 
 const techStack = {
     languages: [ "Python", "JavaScript", "TypeScript", "Java", "C++" ],
@@ -12,13 +18,21 @@ export function TechStack() {
 
     return (
 
-        <div>
+
+        <motion.div
+            id="#skills"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.15 }}
+        >
+        <section id="skills">
 
             <div className="border border-muted">
-                <p className="py-5 px-10 font-mono">SKILLS & STACK</p>
+                <p className="py-5 px-10 text-xs lg:text-md font-mono">SKILLS & STACK</p>
             </div>
 
-            <div className="flex-1 grid grid-cols-4 min-w-0">
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-4 min-w-0">
                 
                 <Card title={"Languages"}>
                     <div className="flex flex-wrap gap-2">
@@ -70,8 +84,8 @@ export function TechStack() {
 
             </div>
 
-        </div>
-
+        </section>
+    </motion.div>
     )
 
 }

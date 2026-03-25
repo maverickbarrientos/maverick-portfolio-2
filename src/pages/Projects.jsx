@@ -1,12 +1,14 @@
 import { ProjectCard } from "../components/ProjectCard"
 import { Badge } from "../components/Badge"
+import { motion } from "framer-motion"
 
 const projects = [
     {
      title: "CLARe",
      description: "Full-stack lab reservation system with approval workflows, QR verification, and automated management.",
      technologies: [ "FastAPI", "ReactJS", "ReactNative", "TailwindCSS", "NativeWind", "MySQL" ],
-     link: "/view_project"
+     link: "/view_project",
+     accent: `#FF6E01`
     }, 
     {
      title: "PlantPulse",
@@ -16,23 +18,35 @@ const projects = [
     }
 ]
 
+const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+}
+
 export function Projects () {
 
     return (
 
-        <div>
+        <motion.div
+            id="#projects"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.15 }}
+        >
+        <section id="projects">
 
             <div className="border border-muted">
-                <p className="py-5 px-10 font-mono">PROJECTS</p>
+                <p className="py-5 px-10 font-mono text-xs   lg:text-md">PROJECTS</p>
             </div>
 
-            <div className="flex-1 grid grid-cols-2">
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
 
                 { 
                     projects.map((project, index) => {
                         return (
-                            <ProjectCard title={project.title} number={`0${index + 1}`} link={project.link}>
-                                <p>{ project.description }</p>
+                            <ProjectCard title={project.title} number={`0${index + 1}`} link={project.link} accent={project.accent}>
+                                <p className="text-sm">{ project.description }</p>
                                 <div className="flex gap-2">
                                     { project.technologies.map((technology) => {
                                         return (
@@ -47,8 +61,9 @@ export function Projects () {
 
             </div>
 
-        </div>
+        </section>
 
+    </motion.div>
     )
 
 }

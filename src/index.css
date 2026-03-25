@@ -20,12 +20,24 @@
   }
 }
 
+@utility .border-bottom-none {
+  border-bottom: none;
+}
+
+@utility .border-r-muted {
+  border-right: 1.5px solid var(--color-border);
+}
+
 body {
   background-color: #fafaf8;
 }
 
 .border-bottom {
-  border-bottom: 1.5px solid var(--color-border)
+  border-bottom: 1px solid var(--color-border)
+}
+
+.border-bottom-none {
+  border-bottom: none;
 }
 
 .font-mono {
