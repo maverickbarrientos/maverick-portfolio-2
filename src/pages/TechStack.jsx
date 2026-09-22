@@ -9,8 +9,8 @@ const fadeUp = {
 
 const techStack = {
     languages: [ "Python", "JavaScript", "TypeScript", "Java", "C++" ],
-    frontend: [ "ReactJS", "VueJS", "VanillaJS", "ReactNative" ],
-    backend: [ "Flask", "FastAPI", "MySQL", "FastAPI User Manager", "JWT" ],
+    frontend: [ "ReactJS", "VueJS", "VanillaJS", "ReactNative", "Next.js" ],
+    backend: [ "Flask", "FastAPI", "MySQL", "FastAPI User Manager", "JWT", "Express.js", "Supabase" ],
     roboticsAndHardware: [ "Arduino", "ESP32", "IoT", "MQTT" ]
 }
 

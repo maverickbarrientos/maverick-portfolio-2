@@ -6,14 +6,26 @@ const projects = [
     {
      title: "CLARe",
      description: "Full-stack lab reservation system with approval workflows, QR verification, and automated management.",
-     technologies: [ "FastAPI", "ReactJS", "ReactNative", "TailwindCSS", "NativeWind", "MySQL" ],
-     link: "/view_project",
+     technologies: [ "FastAPI", "ReactJS", "React Native", "TailwindCSS", "NativeWind", "MySQL" ],
+     link: "https://clare-lyart.vercel.app",
      accent: `#FF6E01`
     }, 
     {
      title: "PlantPulse",
      description: "A smart plant watering system that automates irrigation using real-time data and precise control.",
      technologies: [ "HTML", "CSS", "Vanilla JavaScript", "Python Flask" ],
+     link: "/view_project"
+    },
+    {
+     title: "CITE360",
+     description: "A full-stack academic support and wellness platform serving ~2,600 students and staff at a college IT department.",
+     technologies: ["Next.js", "TailwindCSS", "Supabase", "FastAPI"],
+     link: "https://cite360.citehubs.org"
+    },
+    {
+     title: "Wander With Percy",
+     description: ": An offline-first campus navigation app (React Native/Expo) with Express.js",
+     technologies: ["React Native", "Supabase", "Express.js"],
      link: "/view_project"
     }
 ]

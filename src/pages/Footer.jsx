@@ -33,7 +33,7 @@ export function Footer() {
 
 
             <div className="flex justify-between px-10 py-3 text-xs text-muted">
-                <p>© 2026 Maverick · Built with Care</p>
+                <p>© 2026 Maverick · Built with ReactJS, TailwindCSS, Framer Motion</p>
                 <p>Iloilo City, PH</p>
             </div>
 
