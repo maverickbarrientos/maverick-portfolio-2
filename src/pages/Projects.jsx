@@ -4,6 +4,18 @@ import { motion } from "framer-motion"
 
 const projects = [
     {
+     title: "Taper",
+     description: "A coaching platform for track and field coaches with weekly AI summaries.",
+     technologies: ["React Native", "Supabase", "Express.js"],
+     link: "https://taper-peak.vercel.app"
+    },
+    {
+     title: "CITE360",
+     description: "A full-stack academic support and wellness platform serving ~2,600 students and staff at a college IT department.",
+     technologies: ["Next.js", "TailwindCSS", "Supabase", "FastAPI"],
+     link: "https://cite360.citehubs.org"
+    },
+    {
      title: "CLARe",
      description: "Full-stack lab reservation system with approval workflows, QR verification, and automated management.",
      technologies: [ "FastAPI", "ReactJS", "React Native", "TailwindCSS", "NativeWind", "MySQL" ],
@@ -16,18 +28,6 @@ const projects = [
      technologies: [ "HTML", "CSS", "Vanilla JavaScript", "Python Flask" ],
      link: "/view_project"
     },
-    {
-     title: "CITE360",
-     description: "A full-stack academic support and wellness platform serving ~2,600 students and staff at a college IT department.",
-     technologies: ["Next.js", "TailwindCSS", "Supabase", "FastAPI"],
-     link: "https://cite360.citehubs.org"
-    },
-    {
-     title: "Wander With Percy",
-     description: ": An offline-first campus navigation app (React Native/Expo) with Express.js",
-     technologies: ["React Native", "Supabase", "Express.js"],
-     link: "/view_project"
-    }
 ]
 
 const fadeUp = {
